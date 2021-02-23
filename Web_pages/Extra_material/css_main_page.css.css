@@ -1,0 +1,467 @@
+* {
+	padding: 0;
+	margin: 0;
+	 box-sizing: border-box;
+}
+
+body {
+	background-image: url(Images/breakfast_menu.jpg) ;
+    background-size: cover;
+    
+     font-family: sans-serif;
+
+     
+}
+
+/* Header styling*/
+.header {
+	background-image: url(Images/gallery_06.jpg);
+	background-size: cover;
+	font-size: 40px;
+	text-align: center;
+	color: orange;
+	padding: 15px;
+	
+	border-bottom: 25px solid black;
+	height: 500px;
+}
+
+h1{
+  padding-top: 55px;
+
+}
+
+h1:hover {
+	color:lightblue;
+
+
+}
+
+.header p{
+	font-family: sans-serif;
+	font-size: 30px;
+	
+}
+
+/* Dropdown Window */
+.left_animation {
+	height: 30px;
+	width: 100%;
+	color:white;
+	transition: height 1s ease;
+	background-image: url(Images/gallery_01.jpg);
+	background-size: cover;
+	overflow: hidden;
+}
+
+.left_animation:hover {
+	height: 200px;
+	opacity: 0.8;
+	
+}
+/* Dropdown Window */
+
+
+/* Booking button */
+.booking_button {
+	border:none;
+	border-radius: 15px;
+	padding: 20px;
+	color: white;
+	background-color: red;
+	margin-top: 35px;
+	font-size: 15px;
+	transition: 0.1s ;
+}
+
+.booking_button:hover {
+	opacity: 0.9;
+	font-size: 18px;
+}
+/* Booking Button */
+
+
+ 
+ /* Login Button */
+.login_form {
+	float: left;
+	background-color: coral;
+	color: white;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 15px;
+	font-size: 35px;
+	border-radius: 25px;
+	text-decoration: none;
+	border:7px double white;
+	transition:background 1s;
+}
+
+.login_form:hover {
+	background-color: lightgreen;
+	color:black;
+}
+/* Login Button */
+
+
+
+/* Modal styling */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 25px;
+  background-color: #5cb85c;
+  color: white;
+  text-align: left;
+}
+
+.modal-body {
+	padding: 150px;
+	background-color: lightgrey;
+}
+
+.modal_image {
+  height: 300px;
+  position: absolute;
+  left: 0px;
+  top: 85px;
+  
+}
+
+.modal_image_right {
+	height: 300px;
+	width: 350px;
+  position: absolute;
+  right: 0px;
+  top: 85px;
+}
+
+.modal-footer {
+  padding: 25px;
+  background-color: #5cb85c;
+  color: white;
+  text-align: left;
+}
+/* Modal styling */
+
+/*Header styling*/
+
+
+
+
+/* Menu styling */
+
+.menu-bar {
+	background: rgb(0, 100, 0);
+	text-align: center;
+}
+
+.menu-bar ul {
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.menu-bar ul li {
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.menu-bar ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.active, .menu-bar ul li:hover {
+	background:#2bab0d;
+	border-radius: 3px;
+}
+
+.menu-bar .fa {
+	margin-right: 8px;
+}
+
+.sub-menu-1 {
+	display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+	display: block;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -15px;
+	background:rgb(0, 100, 0);
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+	display: block;
+	margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background:transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+	border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+	color: #b2ff00;
+}
+
+.fa-angle-right {
+	float: right;
+}
+/* Menu Styling */
+
+
+
+/* Mid-section Styling */
+.mid-section {
+	height: 800px;
+	width: 100%;
+}
+
+
+/* Gallery Text */
+.left {
+	border:5px solid green;
+	height: 350px;
+	width: 250px;
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: 30px;
+	margin-top: 30px;
+	background-image: url(Images/dinner_menu.jpg);
+	float: left;
+	transition: 0.5s;
+}
+
+.left p {
+	display: none;
+}
+
+.left:hover {
+	
+	opacity: 0.7;
+	border:none;
+}
+
+.left:hover p {
+	display: block;
+	color: white;
+	border:2px solid white;
+	padding: 10px;
+	margin-top: 140px;
+	
+}
+
+.left_sec {
+	background:url(Images/featured-image-01.jpg);
+	float: left;
+}
+
+.left_third {
+	background:url(Images/featured-image-01.jpg);
+	float: left;
+}
+
+.left_fourth {
+	background:url(Images/featured-image-01.jpg);
+	float: left;
+}
+/* Gallery Text */
+
+
+
+/* Accordion Styling */
+.stacked-accordion {
+  margin-left: 500px;
+  width: auto;
+ position: relative;
+ top:50px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active1, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+
+}
+
+.active1:after {
+  content: '\2212';
+
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition:max-height 0.2s ease-out;
+  width:50%;
+}
+
+.coffee_styling {
+  font-size: 26px;
+
+}
+/* Accrodion Styling */
+
+
+/* Mid-section Styling */
+
+
+
+/* Rounded Menu */
+
+.rounded_menu {
+	border:5px solid red;
+	height:400px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.breakfast_menu {
+	border:8px solid green;
+	height:100%;
+	width:33.33%;
+	float:left;
+	transition: width 5s ease;
+	background:url(Images/featured-image-04.jpg);
+	background-size: cover;
+
+}
+
+.breakfast_menu:hover {
+	width:100%;
+	text-align: center;
+	font-size: 35px;
+	opacity: 0.8
+}
+
+.lunch_menu {
+	border:8px solid purple;
+	height:100%;
+	width:33.33%;
+	float: left;
+	background:url(Images/gallery_01.jpg);
+	transition: 5s ease;
+
+}
+
+.lunch_menu:hover {
+	width: 30%;
+}
+
+.dinner_menu {
+	border:8px solid white;
+	height:100%;
+	width:33.33%;
+	float: left;
+}
+
+.rounded_menu h2{
+  position: relative;
+  top:140px;
+  left:150px;
+}
+/* Rounded Menu */
+
+
+
+
+
+
+/* Footer styling */
+ .footer {
+ 	border:5px solid black;
+ 	height: 200px;
+ 	width:100%;
+	
+ }
+
+
+
+/*Footer styling */ 

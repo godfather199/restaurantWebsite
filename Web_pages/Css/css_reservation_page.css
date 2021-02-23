@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+	* {
+		margin:0px;
+		padding: 0px;
+		box-sizing: border-box;
+		outline: none;
+		font-family: 'Roboto', sans-serif;
+     
+	}
+
+	body {
+		background:url(Images/slider-03.jpg) no-repeat top center;
+		background-size: cover;
+		height: 200vh;
+	}
+
+	/* Header Styling */
+
+	.header {
+	color:coral;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+.header h4{
+	color: black;
+}
+
+
+
+/* Header Styling */
+
+	.wrapper {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		padding: 0px 20px;
+		margin-top: 40px;
+	}
+
+	.contact-form {
+		max-width: 550px;
+		margin: 0 auto;
+		background:rgba(0, 0, 0, 0.8);
+		padding: 30px;
+		border-radius: 5px;
+		display: flex;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.13)
+	}
+
+	.input-fields {
+		display: flex;
+		flex-direction: column;
+		margin-right: 4%;
+	}
+
+	.input-fields, .msg {
+		width: 48%;
+	}
+
+	.input-fields .input, .msg textarea {
+		margin:10px 0px;
+		background:transparent;
+		border:0px;
+		border-bottom: 2px solid #c5ecfd;
+		padding: 10px;
+		color: #c5ecfd;
+		width: 100%;
+	}
+
+	.msg textarea {
+		height: 212px;
+	}
+
+	::-webkit-input-placeholder{
+		color: #c5ecfd;
+	}
+
+	.btn {
+		background:#39b7dd;
+		text-align: center;
+		padding: 15px;
+		border-radius: 5px;
+		color: #fff;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+
+	@media screen and (max-width: 600px) {
+		.contact-form {
+			flex-direction: column;
+		}
+
+		.msg textarea {
+			height: 80px;
+		}
+
+		.input-fields, .msg {
+			width: 100%;
+		}
+	}
+
+	/* Animation */
+	.animation_div {
+		width:30%;
+		height: 500px;
+		position: absolute;
+		top:20px;
+		left: 5px;
+	}
+
+	.left {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px; border-radius: 40px;}
+  25%  {background-color:yellow; left:200px; top:0px; border-radius: 70px}
+  50%  {background-color:blue; left:200px; top:200px; border-radius: 10px}
+  75%  {background-color:green; left:0px; top:200px; border-radius: 50px}
+  100% {background-color:red; left:0px; top:0px; border-radius: 80px}
+}
+
+.right {
+ animation-direction: alternate-reverse;
+}
+
+
+.animation_div_right {
+	
+	width:30%;
+		height: 500px;
+		position: absolute;
+		top:20px;
+		right: 5px;
+}
+
+.left_2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example_2;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  
+}
+
+@keyframes example_2 {
+  0%   {background-color:red; right:0px; top:0px; border-radius: 40px;}
+  25%  {background-color:yellow; right:50px; top:0px; border-radius: 70px}
+  50%  {background-color:blue; right:50px; top:200px; border-radius: 10px}
+  75%  {background-color:green; right:0px; top:200px; border-radius: 50px}
+  100% {background-color:red; right:0px; top:0px; border-radius: 80px}
+}
+
+.right_2 {
+ animation-direction: alternate-reverse;
+}
+	/* Animation */
+
+    /* Toggle Button */
+	.container {
+		border:5px solid red;
+		height: 700px;
+		width: 80%;
+		position: absolute;
+		top:600px;
+		left:200px;
+		background-image: url('Images/Gallery_page/gallery_09.jpg');
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	.container_div {
+		 background-position: center;
+          width:150px;
+          height: 150px;
+          border:5px solid white;
+          border-radius: 15px;
+          display: none;
+	}
+
+	#div1 {
+          background-image: url('Images/Gallery_page/gallery_05.jpg');
+         
+		}
+
+		#div2 {
+			background-image: url('Images/Gallery_page/gallery_09.jpg');
+			
+		}
+
+		#div3 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			 
+		}
+
+		#div4 {
+          background-image: url('Images/Gallery_page/gallery_05.jpg');
+         
+		}
+
+		#div5 {
+			background-image: url('Images/Gallery_page/gallery_09.jpg');
+			 
+		}
+
+		#div6 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div7 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div8 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div9 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div10 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div11 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div12 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div13 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div14 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		#div15 {
+			background-image: url('Images/Gallery_page/gallery_10.jpg');
+			
+		}
+
+		.breakfast {
+          float: left;
+          margin-left: 90px;
+          margin-top: 50px;
+      }
+
+      .toggle_button {
+      	padding: 25px;
+      	font-size: 20px;
+      	border-radius: 15px;
+        background-color: lightblue;
+        transition: 0.5s ease;
+      }
+
+      .toggle_button:hover {
+      	background-color: yellow;
+      	border-radius: 40px;
+      	padding: 30px;
+      }
+
+		.lunch {
+           float: left;
+           margin-left: 90px;
+           margin-top: 50px;
+		}
+
+		.dinner {
+			float: left;
+			margin-left: 90px;
+			margin-top: 50px;
+		}
+
+		.dinner_2 {
+          float: left;
+			margin-left: 90px;
+			margin-top: 50px;
+		}
+		
+
+		.dinner_3 {
+          float: left;
+			margin-left: 90px;
+			margin-top: 50px;
+		
+		}
+
+		/* Toggle Button */

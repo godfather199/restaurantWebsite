@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Css/css_gallery_page.css">
+</head>
+<body>
+
+	<div class="header">
+		<h1 class="caption_header">OUR GALLERY</h1>
+		<p>A COLLECTION OF OUR MENU PICS A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU  A COLLECTION OF OUR MENU </p>
+	</div>
+
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_01.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_02.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_03.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_04.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_05.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_06.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_07.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_08.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_09.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+	<img onclick="myFunction(this)" src="Css/Images/Gallery_page/gallery_10.jpg" alt="Snow" style="width:100%;max-width:300px" id="myImg">
+
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+
+
+<!-- Timeline Div-->
+	<div class="timeline_div">
+		<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>BREAKFAST</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>LUNCH</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>DINNER</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>BRUNCH</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>SNACKS</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>STARTER</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+</div>
+	</div>
+<!-- Timeline Div -->
+
+	<script type="text/javascript">
+		function myFunction(store) {
+			var modal=document.getElementById('myModal');
+            var modalImg=document.getElementById('img01');
+            var captionText=document.getElementById('caption');
+            var span=document.getElementsByClassName('close')[0];
+
+            store.onclick=function() {
+            	modal.style.display='block';
+            	modalImg.src=this.src;
+            	captionText.innerHTML=this.alt;
+            }
+
+            span.onclick=function() {
+            	modal.style.display='none';
+            }
+
+            window.onclick=function(event) {
+            	if(event.target== modal)
+            	{
+            		modal.style.display='none';
+            	}
+            }
+		}
+
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>My Phonebook</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Paneer <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>200</i></a></li>
+
+  <li><a href="#">Kofta <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>450</i></a></li>
+
+  <li><a href="#">Aloo Tikki <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>200</i></a></li>
+
+  <li><a href="#">Chicken do-Pyaza <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>300</i></a></li>
+
+  <li><a href="#">Handi Chicken <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>300</i></a></li>
+
+  <li><a href="#">Mix Veg <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>250</i></a></li>
+
+  <li><a href="#">Mutton Korma <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>450</i></a></li>
+
+  <li><a href="#">Kebab <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>150</i></a></li>
+
+  <li><a href="#">Butter Nan <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>40</i></a></li>
+
+  <li><a href="#">Kulcha <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>100</i></a></li>
+
+  <li><a href="#">Basket Chart <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>240</i></a></li>
+
+  <li><a href="#">Lamb Chops <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>400</i></a></li>
+
+  <li><a href="#">Butter Chicken <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>400</i></a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    
+    input = document.getElementById("myInput");
+    
+    filter = input.value.toUpperCase();
+    
+    ul = document.getElementById("myUL");
+    
+    li = ul.getElementsByTagName("li");
+    
+    for (i = 0; i < li.length; i++) 
+      {
+        a = li[i].getElementsByTagName("a")[0];
+        
+        txtValue = a.textContent || a.innerText;
+        
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+            li[i].style.display = "";
+        } 
+        else
+        {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

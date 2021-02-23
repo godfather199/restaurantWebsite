@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    background-color: orange;
+  }
+  .div_img {
+    width:100%;
+    height: 100%;
+    
+    background-size: cover;
+  }
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 350px;
+  height: 250px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show2 {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn2 {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: #ddd;
+}
+
+.btn2.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+<body>
+
+<h2>Filter By Meals</h2>
+
+<div id="myBtnContainer">
+  <button class="btn2 active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn2" onclick="filterSelection('cars')"> Breakfast</button>
+  <button class="btn2" onclick="filterSelection('animals')">Lunch</button>
+  <button class="btn2" onclick="filterSelection('fruits')">Dinner</button>
+  <button class="btn2" onclick="filterSelection('colors')"> Brunch</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv cars"><img src="Css/Images/slider-03.jpg" class="div_img"></div>
+  <div class="filterDiv colors fruits"><img src="Css/Image_catalogue/gallery-img-05.jpg" class="div_img"></div>
+  <div class="filterDiv cars"><img src="Css/Image_catalogue/01.jpg" class="div_img"></div>
+  <div class="filterDiv colors"><img src="Css/Images/slider-03.jpg" class="div_img"></div>
+  <div class="filterDiv cars animals"><img src="Css/Image_catalogue/02.jpg" class="div_img"></div>
+  <div class="filterDiv colors"><img src="Css/Images/slider-03.jpg" class="div_img"></div>
+  <div class="filterDiv animals"><img src="Css/Image_catalogue/about-inset.jpg" class="div_img"></div>
+  <div class="filterDiv animals"><img src="Css/Image_catalogue/blog-img-04.jpg" class="div_img"></div>
+  <div class="filterDiv fruits"><img src="Css/Image_catalogue/lunch_menu.jpg" class="div_img"></div>
+  <div class="filterDiv fruits animals"><img src="Css/Image_catalogue/blog-img-06.jpg" class="div_img"></div>
+  <div class="filterDiv fruits"><img src="Css/Image_catalogue/special-menu-1.jpg" class="div_img"></div>
+  <div class="filterDiv fruits"><img src="Css/Images/slider-03.jpg" class="div_img"></div>
+  <div class="filterDiv animals"><img src="Css/Image_catalogue/gallery_04.jpg" class="div_img"></div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show2");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show2");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn2");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

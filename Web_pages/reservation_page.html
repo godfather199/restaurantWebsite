@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="Css/css_reservation_page.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+		<div class="header">
+		<h1><i>Reservation</i></h1><br>
+		
+		<h4><b>BOOKING FORM</b></h4><br>
+		
+	</div>
+
+	<div class="wrapper">
+		<div class="contact-form">
+			<div class="input-fields">
+				<input type="text" class="input" placeholder="Name" name="" id='user' required autocomplete="off">
+				<input type="email" class="input" placeholder="Email Address" name="" id="email">
+				<input type="number" class="input" placeholder="Phone" name="" id="num">
+				<select class="input" style="color:#c5ecfd; background:black">
+					<option selected="selected">Choose a meal</option>
+					<option>Breakfast</option>
+					<option>Lunch</option>
+					<option>Dinner</option>
+					<option>Brunch</option>
+					<option>Snacks</option>
+				</select>
+			</div>
+			
+			<div class="msg" >
+				<textarea id='message' placeholder="Message"></textarea>
+				<div class="btn" onclick="validFunction()">Send</div>
+			</div>
+		</div>
+	</div>
+
+     <!-- Animation -->
+	<div class="animation_div">
+		<div class="left"></div>
+		<div class="left right"></div>
+	</div>
+
+	<div class="animation_div_right">
+		<div class="left_2"></div>
+		<div class="left_2  right_2"></div>
+	</div>
+	<!-- Animation -->
+
+
+
+	<div class="container">
+
+		<div class="breakfast">
+			<button id='click_btn' class='toggle_button'>Breakfast</button><br><br>
+
+	<div id='div1' class='container_div' style="display: none;"></div><br>
+	<div id="div2" class='container_div' style="display: none;"></div><br>
+	<div id="div3" class='container_div' style="display: none;"></div><br>
+		</div>
+
+		<div class="lunch">
+			<button id='click_btn_2' class='toggle_button'>Lunch</button><br><br>
+
+	<div id='div4' class='container_div' style="display: none;"></div><br>
+	<div id="div5" class='container_div' style="display: none;"></div><br>
+	<div id="div6" class='container_div' style="display: none;"></div><br>
+		</div>
+
+		<div class="dinner">
+			<button id='click_btn_3' class='toggle_button'>Dinner</button><br><br>
+
+	<div id='div7'class='container_div' ></div><br>
+	<div id="div8" class='container_div'></div><br>
+	<div id="div9" class='container_div'></div><br>
+		</div>
+
+		<div class="dinner_2">
+			<button id='click_btn_4' class='toggle_button'>Brunch</button><br><br>
+
+	<div id='div10' class='container_div'></div><br>
+	<div id="div11" class='container_div'></div><br>
+	<div id="div12" class='container_div'></div><br>
+		</div>
+
+		<div class="dinner_3">
+			<button id='click_btn_5' class='toggle_button'>Desserts</button><br><br>
+
+	<div id='div13' class='container_div'></div><br>
+	<div id="div14" class='container_div'></div><br>
+	<div id="div15" class='container_div'></div><br>
+		</div>
+
+
+
+	</div>
+
+		<script type="text/javascript">
+         //jQuery code
+		$(document).ready(function() {
+			$('#click_btn').click(function() {
+				$('#div1').fadeToggle();
+				$('#div2').fadeToggle('slow');
+				$('#div3').fadeToggle(1500);
+			});
+
+			$('#click_btn_2').click(function() {
+				$('#div4').fadeToggle();
+				$('#div5').fadeToggle('slow');
+				$('#div6').fadeToggle(1500);
+			});
+
+			$('#click_btn_3').click(function() {
+				$('#div7').fadeToggle();
+				$('#div8').fadeToggle('slow');
+				$('#div9').fadeToggle(1500);
+			});
+
+
+			$('#click_btn_4').click(function() {
+				$('#div10').fadeToggle();
+				$('#div11').fadeToggle('slow');
+				$('#div12').fadeToggle(1500);
+			});
+
+
+			$('#click_btn_5').click(function() {
+				$('#div13').fadeToggle();
+				$('#div14').fadeToggle('slow');
+				$('#div15').fadeToggle(1500);
+			});
+		});
+		//jQuery code
+
+
+		//Form validation code
+          function validFunction() {
+          	var userInput=document.getElementById('user').value;
+          	var mail=document.getElementById('email').value;
+          	var phone=document.getElementById('num').value;
+          	var mess=document.getElementById('message').value;
+
+          	var filter=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+
+          	if(userInput == '' || userInput == null) {
+          		alert('Please Enter User Name');
+          	}
+
+           else if(mail == '') {
+          		alert('Please Enter Email');
+          	}
+
+          	else if(!filter.test(mail)) {
+          		alert('Please enter valid Email');
+          	}
+          	else if(phone.toString().length == 0) {
+          		alert('Please enter phone number');
+          	}
+          	else if(phone.toString().length < 10 || phone.toString().length > 10) {
+          		alert('Phone number should be 10 digits');
+          	}
+          	else if(mess.length == 0 || mess.length == '') {
+          		alert('Please enter message');
+          	}
+          	else {
+          		alert('Form submitted');
+          	}
+          }
+		//Form validation code
+	</script>
+
+</body>
+</html>

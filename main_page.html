@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Css/css_main_page.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script type="text/javascript">
+		
+	</script>
+
+</head>
+<body onload="myFunction()">
+
+       <!-- Head section -->
+	<div class="header">
+
+         <!-- Top Screen Text -->
+          <!-- Login Button -->
+		<div class="top_left_text">
+			<a href="Web_pages/Login_beta.html" target="_blank" class="login_form">Login</a>
+				<p><i>Family Friendly Restaurant</i></p>
+			</div>
+        <!-- Top Screen Text Finished -->
+        <div class="search_bar">
+        	<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+        </div>
+
+          <!--  Main Heading -->
+		<h1><i>PLASSIO DELIGHTS</i></h1>
+
+		    <!-- Dropdown Window -->
+		<div class="left_animation">
+			<p>ALL OF FOOD DELICACY IN YOUR PALLETE <br>
+			   A family friendly restaurant<br>
+			   Calm down your taste buds with an exotic selection to choose from</p>
+			</div>
+
+             <!-- Booking Button -->
+			<button  id="myBtn" class="booking_button">BOOK MY TABLE</button><br>
+			<a href="Web_pages/search_img_page.html" target="_blank" class='anchor_button'>Search The Dishes</a>
+      <!-- Booking Button -->
+
+      <div class="progress_bar">
+        <div id="myProgress">
+  <div id="myBar">10%</div>
+</div>
+<button onclick="move()" class="pro_button">Click Me</button>
+      </div>
+
+      
+      <!-- Chat Box -->
+        <button class='open-button' onclick='openForm()'>Chat with us?</button>
+
+<div class='chat-popup' id='myForm'>
+<form action='#' class='form-container'>
+<h1>Chat</h1>
+<label for='msg'><b>Message</b></label>
+<textarea placeholder='Type message..' name='msg' required></textarea>
+<button type='submit' class='btn2'>Send</button>
+<button type='button' class='btn2 cancel' onclick='closeForm()'>Close</button>
+</form>
+</div>
+<!-- Chat Box -->
+    
+		
+		<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <p>LUNCH TIMING : 2 PM - 4 PM</p>
+    </div>
+    
+    <div class="modal-body">
+     <img  class="modal_image" src="Css/Images/Gallery_page/gallery_05.jpg">
+     <p>This is some random text</p>
+     <img  class="modal_image_right" src="Css/Images/Gallery_page/gallery_07.jpg">
+    </div>
+    
+    <div class="modal-footer">
+      <p>DINNER TIMING : 8 PM - 11 PM</p>
+    </div>
+    
+  </div>
+</div>
+<!-- The Modal finished  -->
+</div>
+<!-- Header Section finished  -->
+
+
+<!-- Menu Styling -->
+<div class="menu-bar">
+	<ul>
+		<li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+
+        <!-- About Us -->
+		<li><a href="Web_pages/about_page.html" target="_blank"><i class="fa fa-user"></i>About Us</a>
+			<div class="sub-menu-1">
+				<ul>
+					<li><a href="#">Mission</a></li>
+					<li><a href="#">Vision</a></li>
+					<li><a href="#">Team</a></li>
+				</ul>
+			</div>
+		</li> 
+
+       <!-- Menu -->
+		<li><a href="Web_pages/menu_page.html" target="_blank"><i class="fa fa-clone"></i>Menu</a></li>
+
+		<li><a href="Web_pages/reservation_page.html" target="_blank"><i class="fa fa-users"></i>Reservation</a></li>
+		<li><a href="Web_pages/gallery_page.html" target="_blank"><i class="fa fa-paste"></i>Gallery</a></li>
+		<li><a href="Web_pages/blog_page.html" target="_blank"><i class="fa fa-edit"></i>Blog</a></li>
+		<li><a href="Web_pages/pricing_page.html" target="_blank"><i class="fa fa-inr"></i>Pricing</a></li>
+		<li><a href="Web_pages/tiled_gallery.html" target="_blank"><i class='fas fa-utensils'></i> Foodiezz!!</a></li>
+    <li><a href="Web_pages/user_rating.html" target="_blank"><i class='fas fa-theater-masks'></i> User Ratings!!</a></li>
+	</ul>
+</div>
+<!-- Menu Section finished -->
+
+
+<!-- Mid-section  -->
+<div class="mid-section">
+
+	<div class="flip_card_1">
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Css/Image_catalogue/breakfast_item.jpg" alt="Avatar" style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+     <h1>Oatmeal</h1> 
+      <p>With fruits and almonds</p> 
+      <p>Perfect start for the day!!!!!</p>
+    </div>
+  </div>
+</div> 
+  </div>
+
+  <div class="flip_card_2">
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Css/Image_catalogue/gallery_03.jpg" alt="Avatar" style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Upma</h1> 
+      <p>With fresh Vegetables</p> 
+      <p>Perfect start for the day!!!!!</p>
+    </div>
+  </div>
+</div> 
+  </div>
+
+  <div class="flip_card_3">
+     <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Css/Image_catalogue/gallery-img-05.jpg" alt="Avatar" style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+     <h1>Mixed</h1> 
+      <p>With fruits and almonds</p> 
+      <p>Perfect start for the lunch!!!!!</p>
+    </div>
+  </div>
+</div> 
+  </div>
+
+  <div class="flip_card_4">
+     <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Css/Image_catalogue/img-04.jpg" alt="Avatar" style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+       <h1>Burger</h1> 
+      <p>Juicy Burger with sauce</p> 
+      <p>Perfect end for the lunch!!!!!</p>
+    </div>
+    </div>
+  </div>
+</div> 
+  </div>
+
+</div>
+<!-- Menu images/text ended -->
+
+ 
+<!-- Accordion -->
+	<div class="stacked-accordion">
+		<button class="accordion">Breakfast   <i class="fas fa-coffee coffee_styling"></i></button>
+		<div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<button class="accordion">Lunch   <i class="fas fa-utensils coffee_styling"></i></button>
+		<div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+<button class="accordion">Dinner   <i class="fas fa-glass-martini-alt coffee_styling"></i></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</div>
+<!-- Accordion ended  -->
+
+
+<!-- Slide Toggle -->
+<div class="slider_div">
+	
+<div class="flip">Click Me</div>
+<div class="slide_panel"></div>
+</dir>
+
+</div>
+
+<div class="slider_div_right">
+	<div class="flip_2">Click Me</div>
+<div class="slide_panel_2"></div>
+</div>
+<!-- Slide Toggle-->
+
+
+<div class="glow_text">
+  <h1 class="glow">CHEF's</h1>
+</div>
+
+<div class="chef_card">
+ 
+  <div class="card_1">
+    <div class="card">
+  <img src="Css/Image_catalogue/staff-02.jpg" alt="John" style="width:100%">
+  <h1>John Doggett</h1>
+  <p class="title">Head Chef</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+</div>
+  </div>
+
+  <div class="card_2">
+    <div class="card">
+  <img src="Css/Image_catalogue/staff-01.jpg" alt="John" style="width:100%">
+  <h1>Jeffrey Spender</h1>
+  <p class="title">Assistant Chef</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+</div>
+  </div>
+
+  <div class="card_3">
+    <div class="card">
+  <img src="Css/Image_catalogue/stuff-img-05.jpg" alt="John" style="width:100%">
+  <h1>Monica Reyes</h1>
+  <p class="title">Assistant Chef</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+</div>
+  </div>
+</div>
+
+
+<!-- Sliding Blocks  -->
+<div class="rounded_menu">
+
+	<div class="breakfast_menu">
+		<h2>BREAKFAST</h2>
+	</div>
+
+	<div class="lunch_menu">
+		<h2>LUNCH</h2>
+	</div>
+
+	<div class="dinner_menu">
+		<h2>DINNER</h2>
+	</div>
+	
+</div>
+<!-- Sliding Blocks ended -->
+
+
+<div class="footer">
+ <h2 style="color: orange; font-weight: bold;">SEARCH THE DISHES</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction_2()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Paneer <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>200</i></a></li>
+
+  <li><a href="#">Kofta <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>450</i></a></li>
+
+  <li><a href="#">Aloo Tikki <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>200</i></a></li>
+
+  <li><a href="#">Chicken do-Pyaza <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>300</i></a></li>
+
+  <li><a href="#">Handi Chicken <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>300</i></a></li>
+
+  <li><a href="#">Mix Veg <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>250</i></a></li>
+
+  <li><a href="#">Mutton Korma <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>450</i></a></li>
+
+  <li><a href="#">Kebab <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>150</i></a></li>
+
+  <li><a href="#">Butter Nan <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>40</i></a></li>
+
+  <li><a href="#">Kulcha <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>100</i></a></li>
+
+  <li><a href="#">Basket Chart <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>240</i></a></li>
+
+  <li><a href="#">Lamb Chops <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>400</i></a></li>
+
+  <li><a href="#">Butter Chicken <i class='fas fa-rupee-sign' style='font-size:25px; margin-left: 15px;'>400</i></a></li>
+</ul>
+</div>
+
+<!-- Snackbar -->
+<div id="snackbar">
+  
+  <div class='bg-image'></div>
+
+<div class='bg-text'>
+
+<p style="color: orange; font-size: 35px;"><i>PLASSIO DELIGHTS</i></p>
+</div>
+</div>
+<!-- Snackbar -->
+
+<script>
+	// Accordion code
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) 
+ {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var panel = this.nextElementSibling;
+    
+   if(panel.style.maxHeight)
+   {
+   	panel.style.maxHeight=null;
+   }
+   else
+   {
+   	panel.style.maxHeight=panel.scrollHeight+'px';
+   }
+    
+  });
+}
+//Accordion code
+
+
+
+// Animated Modal box
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Animated Modal box
+$(document).ready(function() {
+    $('.flip').click(function() {
+      $('.slide_panel').slideToggle('slow');
+    });
+  });
+
+$(document).ready(function() {
+    $('.flip_2').click(function() {
+      $('.slide_panel_2').slideToggle('slow');
+    });
+  });
+
+
+
+
+
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3500);
+}
+
+
+function myFunction_2() {
+    var input, filter, ul, li, a, i, txtValue;
+    
+    input = document.getElementById("myInput");
+    
+    filter = input.value.toUpperCase();
+    
+    ul = document.getElementById("myUL");
+    
+    li = ul.getElementsByTagName("li");
+    
+    for (i = 0; i < li.length; i++) 
+      {
+        a = li[i].getElementsByTagName("a")[0];
+        
+        txtValue = a.textContent || a.innerText;
+        
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+            li[i].style.display = "";
+        } 
+        else
+        {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+
+function openForm() {
+ document.getElementById('myForm').style.display='block';
+}
+
+function closeForm() {
+ document.getElementById('myForm').style.display='none';
+}
+
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 30);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+
+</script>
+
+</body>
+</html>
